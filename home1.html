@@ -1,0 +1,208 @@
+﻿<html>
+	<head>
+			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+		<title>nooble!!</title>
+	<style>
+		body {
+  			background-color: rgb(249, 249, 249);
+		}
+		h1 {
+			text-align: center;
+		}
+		.center{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 20%;
+		}
+		.btn {
+ 			 background-color: rgb(249, 249, 249);;
+			border: none;
+			color: black;
+			padding: 12px 16px;
+			font-size: 16px;
+			cursor: pointer;
+			border-radius: 10px ;
+			transition: 1.5s;
+		}
+	
+		.btn:hover {
+  			background-color: gray;
+		}
+		.btn2 {
+ 			display: block;
+			background-color: lightblue;
+			border: 2px solid red;
+			color: black;
+			padding: 12px 16px;
+			font-size: 16px;
+			cursor: pointer;
+			margin-left: auto;
+			margin-right: auto;
+			width: 27%;
+			border-radius: 30px ;
+			transition: 1.5s;
+		}
+	
+		.btn2:hover {
+  			background-color: red;
+		}
+		.btn3 {
+ 			display: block;
+			background-color: lightblue;
+			border: 2px solid blue;
+			color: black;
+			padding: 12px 16px;
+			font-size: 16px;
+			cursor: pointer;
+			margin-left: auto;
+			margin-right: auto;
+			width: 27%;
+			border-radius: 30px ;
+			transition: 1.5s;
+		}
+	
+		.btn3:hover {
+  			background-color:blue;
+		}
+		
+		
+		.left link{
+			text-align: left;
+			text-color: rgb(5, 163, 232);
+		}
+		.p1{
+			color: rgb(120, 120, 120);	
+			text-align: right;
+			margin-top: -10;
+			font-family: "BNazanin" 
+		}
+		.border{
+			display: block;
+			background-color: lightblue;
+  			width: 100px;
+  			border: 2px solid black;
+  			padding: 15px;
+			margin: auto;
+  			width: 25%;
+			margin-top: 25px;
+			border-radius: 10px;
+		}
+		.border1{
+			display: block;
+			background-color: lightblue;
+  			width: 100px;
+  			border: 2px solid black;
+			border-top: 0ch;
+  			padding: 15px;
+			margin: auto;
+  			width: 25%;
+			border-radius: 10px;
+		}
+		input{
+			float: right;
+			border: 2px solid #aaa;
+			border-radius: 4px;
+			padding: 4px;
+			box-sizing: border-box;
+			transition: 0.3s;
+			margin-top: -12;
+			background-color:rgb(249, 249, 249);
+		}
+		input:focus{
+			border-color: black;
+			box-shadow: 0 0 8px darkolivegreen;
+		}
+		.inputWithIcon input{
+			padding-right: 20px;
+		}
+		.inputWithIcon{
+			position: relative;
+		}
+		.inputWithIcon i{
+			position: absolute;
+			right: 0;
+			top: -14px;
+			padding: 8px 9px;
+			color: #aaa;
+		}
+		.inputWithIcon input:focus + i{
+			color: black;
+		}
+		a:hover{
+			color: blue;
+		}
+		.sideButon{
+			display: block;
+			position: absolute;
+			height: 150px;
+			width: 150px;
+			margin-top: -250px;
+			border: 2px solid gray;
+			text-align: center;
+			padding: 20px;
+			color: black;
+			background-color: lightblue;
+			cursor: pointer;
+			border-radius: 50%;
+			transition: 1.5s;
+			font-size: 20px;
+		}
+		.leftSide{
+			float: left;
+			left: 20px;
+		}
+		.rightSide{
+			float: right;
+			right: 20px;
+		}
+		.sideButon:hover{
+			background-color: #aaa;
+		}
+	</style>
+	</head>
+	<body>
+		<h1>
+		Welcome to the nooble games logIn web page
+		</h1>
+		<img class="center" src="Untitled-1.png" alt="logo">
+		<div class="border" >
+			<p class="p1">
+				:اگر حساب کاربری ندارید ثبت‌نام کنید
+			</p>
+			<a class="left link" href="https://www.google.com/">
+				.ثبت‌نام کن
+			</a>
+		</div>
+		<div class="border1">
+			<p class="p1"><b>:نام کاربری</b></p>
+			<div class="inputWithIcon">
+				<input id="userName" type="text" name="username" >
+				<i class="fas fa-user" aria-hidden="true"></i>
+			</div>
+			<button onclick=logged() class="btn"><i class="fa fa-check"></i>بزن روش</button> <br>
+			<p class="p1"><b>:رمز</b></p>
+			<div class="inputWithIcon">
+				<input id="passWord" type="password" name="password">
+				<i class="fas fa-user-lock" aria-hidden="true"></i>		
+			</div><br>
+		</div><br>
+		<button class="btn2"><i class="fab fa-google-plus-g"></i>از طریق گوگل وارد شوید</button> <br>
+		<button class="btn3"><i class="fab fa-facebook-f"></i>از طریق فیسبوک وارد شوید</button>
+		<p id="showTime"></p>		
+		<button class="sideButon leftSide">درباره ما</button>
+		<button class="sideButon rightSide">رمزم یادم نیست</button>
+		<script>
+			function logged(){
+				if(document.getElementById("userName").value == "shyn99" && document.getElementById("passWord").value == "password"){
+					document.getElementById("showTime").innerHTML="hi shyn :*"
+				}
+				else if(document.getElementById("userName").value != "shyn99" || document.getElementById("passWord").value != "password"){
+					document.getElementById("showTime").innerHTML="you dont have any accounts here"
+				}
+			}
+		</script>
+	
+
+	</body>
+</html>
